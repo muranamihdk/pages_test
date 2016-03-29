@@ -1,3 +1,3 @@
 # pages_test
 
-*test*
+Test project for understanding GitHub Pages.
