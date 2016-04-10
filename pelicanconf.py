@@ -4,8 +4,8 @@ from __future__ import unicode_literals
 
 AUTHOR = 'pages'
 SITENAME = 'Pages Test Site'
-#SITEURL = 'https://muranamihdk.github.io/pages_test'
-SITEURL = ''
+SITEURL = 'https://muranamihdk.github.io/pages_test'
+#SITEURL = ''
 
 PATH = 'content'
 OUTPUT_PATH = 'output/'
