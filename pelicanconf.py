@@ -38,7 +38,7 @@ DEFAULT_PAGINATION = False
 #RELATIVE_URLS = True
 
 DEFAULT_DATE = 'fs'
-DEFAULT_DATE_FORMAT = '%Y年%m月%d日 (%a)'
+DEFAULT_DATE_FORMAT = '%Y年%m月%d日(%a)'
 LOCALE = 'ja_JP'
 
 #THEME = "simple"
