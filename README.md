@@ -1,3 +1,3 @@
 # pages_test
 
-*test*
+[site](https://muranamihdk.github.io/pages_test/)
