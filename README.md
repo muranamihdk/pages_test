@@ -1,3 +1,4 @@
-# pages_test
+# GitHub Pages Test
 
-[site](https://muranamihdk.github.io/pages_test/)
+Make project site with GitHub Pages and Pelican.
+The site is [here](https://muranamihdk.github.io/pages_test/).
