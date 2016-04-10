@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}{{ output_file }}{%endblock%}
+{% block content %}
+    <h1>{{ output_file }}</h1>
+
+    {{ output_file }}
+
+	{% if output_file %}
+		<p>
+		Last updated: {{ output_file }}
+		</p>
+	{% endif %}
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }}{%endblock%}
+{% block content %}
+    <h1>{{ page.title }}</h1>
+
+    {{ page.content }}
+
+        <h2>Common variables</h2>
+        
+            <ul>
+                <li>output_file: {{ output_file }}</li>
+                <li>articles: {{ articles }}</li>
+                <li>dates: {{ dates }}</li>
+                <li>drafts: {{ drafts }}</li>
+                <li>tags: {{ tags }}</li>
+                <li>categories: {{ categories }}</li>
+                <li>pages: {{ pages }}</li>
+                <li>hidden_pages: {{ hidden_pages }}</li>
+            </ul>
+
+        <h2>Page object attributes</h2>
+        
+            <ul>
+                <li>author: {{ page.author }}</li>
+                <li>content: {{ page.content }}</li>
+                <li>date: {{ page.date }}</li>
+                <li>date_format: {{ page.date_format }}</li>
+                <li>default_template: {{ page.default_template }}</li>
+                <li>in_default_lang: {{ page.in_default_lang }}</li>
+                <li>lang: {{ page.lang }}</li>
+                <li>locale_date: {{ page.locale_date }}</li>
+                <li>metadata: {{ page.metadata }}</li>
+                <li>save_as: {{ page.save_as }}</li>
+                <li>slug: {{ page.slug }}</li>
+                <li>source_path: {{ page.source_path }}</li>
+                <li>status: {{ page.status }}</li>
+                <li>summary: {{ page.summary }}</li>
+                <li>tags: {{ page.tags }}</li>
+                <li>template: {{ page.template }}</li>
+                <li>title: {{ page.title }}</li>
+                <li>translations: {{ page.translations }}</li>
+                <li>url: {{ page.url }}</li>
+            </ul>
+
+	{% if page.modified %}
+		<p>
+		Last updated: {{ page.locale_modified }}
+		</p>
+	{% endif %}
+{% endblock %}

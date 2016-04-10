@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }}{%endblock%}
+{% block content %}
+    <h1>{{ page.title }}</h1>
+
+    {{ page.content }}
+
+    {{ page.content }}
+
+    {{ page.content }}
+
+    {{ page.content }}
+
+    {{ page.content }}
+
+    <p>template: {{ page.template }}</p>
+
+	{% if page.modified %}
+		<p>
+		Last updated: {{ page.locale_modified }}
+		</p>
+	{% endif %}
+{% endblock %}
