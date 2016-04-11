@@ -7,23 +7,97 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="https://muranamihdk.github.io/pages_test/">Pages Test Site <strong></strong></a></h1>
+                <h1><a href="/">Pages Test Site <strong></strong></a></h1>
         </header><!-- /#banner -->
         <nav id="menu"><ul>
         </ul></nav><!-- /#menu -->
     <h1>Welcome My Page</h1>
 
-    <p><strong>Hello Pages</strong></p>
-<p><a href="https://muranamihdk.github.io/pages_test/index.html">a link relative to the current file</a><br />
-<a href="https://muranamihdk.github.io/pages_test/index.html">a link relative to the content root</a></p>
-<p><a href="https://muranamihdk.github.io/pages_test/page_attr.html">a link relative to the current file</a><br />
-<a href="https://muranamihdk.github.io/pages_test/page_attr.html">a link relative to the content root</a></p>
-<p><a href="{filename}dir1/index.md">a link relative to the current file</a><br />
-<a href="{filename}/dir1/index.md">a link relative to the content root</a></p>
-<p><a href="{filename}dir2/index.md">a link relative to the current file</a><br />
-<a href="{filename}/dir2/index.md">a link relative to the content root</a></p>
-<p><a href="{filename}dir2/dir3/index.md">a link relative to the current file</a><br />
-<a href="{filename}/dir2/dir3/index.md">a link relative to the content root</a></p>
+    <div class="page-header">
+<h1>でんでんエディター</h1>
+</div>
+<p>でんでんマークダウンをリアルタイムでプレビューできるよっ！</p>
+<h2>段落</h2>
+<p>これは段落です。</p>
+<p>これは別の段落です。</p>
+<h3>段落内の改行</h3>
+<p>これは段落です。<br />
+これは段落の続きです。</p>
+<hr />
+<h2>見出し</h2>
+<h1>見出しレベル１</h1>
+<h2>見出しレベル２</h2>
+<h3>見出しレベル３</h3>
+<h4>見出しレベル４</h4>
+<h5>見出しレベル５</h5>
+<h6>見出しレベル６</h6>
+<hr />
+<h2>引用</h2>
+<blockquote>
+<p>これは引用された段落です。</p>
+<p>これも引用された段落です。</p>
+</blockquote>
+<hr />
+<h2>リスト</h2>
+<ul>
+<li>りんご</li>
+<li>もも</li>
+<li>みかん</li>
+</ul>
+<ol>
+<li>りんご</li>
+<li>もも</li>
+<li>みかん</li>
+</ol>
+<hr />
+<h2>コードブロック</h2>
+<div class="highlight"><pre><span></span><span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Hello world.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+</pre></div>
+
+
+<hr />
+<h2>ハイパーリンク</h2>
+<p>詳しくは<a href="http://example.com/">こちら</a>をごらんください。</p>
+<hr />
+<h2>強調</h2>
+<p>これは<em>強調されたテキスト</em>です。</p>
+<p>これは<strong>重要なテキスト</strong>です。</p>
+<hr />
+<h2>ルビ</h2>
+<p><ruby>電子出版<rt>でんししゅっぱん</rt></ruby>を手軽に</p>
+<hr />
+<h2>縦中横</h2>
+<p>昭和<span class="tcy">53</span>年</p>
+<hr />
+<h2>脚注</h2>
+<p>これは脚注付き<a id="fnref_1" href="#fn_1" rel="footnote" class="noteref" epub:type="noteref">1</a>の段落です。</p>
+<hr />
+<h2>画像</h2>
+<p><img alt="電書ちゃん" src="https://lh4.googleusercontent.com/-m3cvu_gKtW8/TrauQGoZbHI/AAAAAAAAJdc/ytImJ4o4DcU/s144/sd-07.png" /></p>
+<hr />
+<h2>改ページ（ファイル分割）</h2>
+<p>これは通常の段落です。</p>
+<hr class="docbreak" />
+<h2>大見出し</h2>
+<hr />
+<h2>ページ番号</h2>
+<div id="pagenum_5" class="pagenum" title="5" epub:type="pagebreak"></div>
+<h2>大見出し</h2>
+<p>これは途中で改ページ<span id="pagenum_24" class="pagenum" title="24" epub:type="pagebreak"></span>される段落です。</p>
+<div id="pagenum_36" class="pagenum" title="36" epub:type="pagebreak">36</div>
+<h2>大見出し</h2>
+<div class="footnotes" epub:type="footnotes">
+<hr />
+<ol>
+<li>
+<div id="fn_1" class="footnote" epub:type="footnote">
+<p>そして、これが脚注です。&#160;<a href="#fnref_1">&#9166;</a></p>
+</div>
+</li>
+</ol>
+</div>
 
         <h2>Common variables</h2>
         
@@ -34,7 +108,7 @@
                 <li>drafts: []</li>
                 <li>tags: []</li>
                 <li>categories: []</li>
-                <li>pages: [<pelican.contents.Page object at 0x1021eff98>, <pelican.contents.Page object at 0x102207080>]</li>
+                <li>pages: [<pelican.contents.Page object at 0x100669828>]</li>
                 <li>hidden_pages: []</li>
             </ul>
 
@@ -42,36 +116,159 @@
         
             <ul>
                 <li>author: pages</li>
-                <li>content: <p><strong>Hello Pages</strong></p>
-<p><a href="https://muranamihdk.github.io/pages_test/index.html">a link relative to the current file</a><br />
-<a href="https://muranamihdk.github.io/pages_test/index.html">a link relative to the content root</a></p>
-<p><a href="https://muranamihdk.github.io/pages_test/page_attr.html">a link relative to the current file</a><br />
-<a href="https://muranamihdk.github.io/pages_test/page_attr.html">a link relative to the content root</a></p>
-<p><a href="{filename}dir1/index.md">a link relative to the current file</a><br />
-<a href="{filename}/dir1/index.md">a link relative to the content root</a></p>
-<p><a href="{filename}dir2/index.md">a link relative to the current file</a><br />
-<a href="{filename}/dir2/index.md">a link relative to the content root</a></p>
-<p><a href="{filename}dir2/dir3/index.md">a link relative to the current file</a><br />
-<a href="{filename}/dir2/dir3/index.md">a link relative to the content root</a></p></li>
-                <li>date: 2016-04-11 11:42:33+09:00</li>
+                <li>content: <div class="page-header">
+<h1>でんでんエディター</h1>
+</div>
+<p>でんでんマークダウンをリアルタイムでプレビューできるよっ！</p>
+<h2>段落</h2>
+<p>これは段落です。</p>
+<p>これは別の段落です。</p>
+<h3>段落内の改行</h3>
+<p>これは段落です。<br />
+これは段落の続きです。</p>
+<hr />
+<h2>見出し</h2>
+<h1>見出しレベル１</h1>
+<h2>見出しレベル２</h2>
+<h3>見出しレベル３</h3>
+<h4>見出しレベル４</h4>
+<h5>見出しレベル５</h5>
+<h6>見出しレベル６</h6>
+<hr />
+<h2>引用</h2>
+<blockquote>
+<p>これは引用された段落です。</p>
+<p>これも引用された段落です。</p>
+</blockquote>
+<hr />
+<h2>リスト</h2>
+<ul>
+<li>りんご</li>
+<li>もも</li>
+<li>みかん</li>
+</ul>
+<ol>
+<li>りんご</li>
+<li>もも</li>
+<li>みかん</li>
+</ol>
+<hr />
+<h2>コードブロック</h2>
+<div class="highlight"><pre><span></span><span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Hello world.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+</pre></div>
+
+
+<hr />
+<h2>ハイパーリンク</h2>
+<p>詳しくは<a href="http://example.com/">こちら</a>をごらんください。</p>
+<hr />
+<h2>強調</h2>
+<p>これは<em>強調されたテキスト</em>です。</p>
+<p>これは<strong>重要なテキスト</strong>です。</p>
+<hr />
+<h2>ルビ</h2>
+<p><ruby>電子出版<rt>でんししゅっぱん</rt></ruby>を手軽に</p>
+<hr />
+<h2>縦中横</h2>
+<p>昭和<span class="tcy">53</span>年</p>
+<hr />
+<h2>脚注</h2>
+<p>これは脚注付き<a id="fnref_1" href="#fn_1" rel="footnote" class="noteref" epub:type="noteref">1</a>の段落です。</p>
+<hr />
+<h2>画像</h2>
+<p><img alt="電書ちゃん" src="https://lh4.googleusercontent.com/-m3cvu_gKtW8/TrauQGoZbHI/AAAAAAAAJdc/ytImJ4o4DcU/s144/sd-07.png" /></p>
+<hr />
+<h2>改ページ（ファイル分割）</h2>
+<p>これは通常の段落です。</p>
+<hr class="docbreak" />
+<h2>大見出し</h2>
+<hr />
+<h2>ページ番号</h2>
+<div id="pagenum_5" class="pagenum" title="5" epub:type="pagebreak"></div>
+<h2>大見出し</h2>
+<p>これは途中で改ページ<span id="pagenum_24" class="pagenum" title="24" epub:type="pagebreak"></span>される段落です。</p>
+<div id="pagenum_36" class="pagenum" title="36" epub:type="pagebreak">36</div>
+<h2>大見出し</h2>
+<div class="footnotes" epub:type="footnotes">
+<hr />
+<ol>
+<li>
+<div id="fn_1" class="footnote" epub:type="footnote">
+<p>そして、これが脚注です。&#160;<a href="#fnref_1">&#9166;</a></p>
+</div>
+</li>
+</ol>
+</div></li>
+                <li>date: 2016-04-03 10:20:00+09:00</li>
                 <li>date_format: %Y年%m月%d日(%a)</li>
                 <li>default_template: page</li>
                 <li>in_default_lang: True</li>
                 <li>lang: ja</li>
-                <li>locale_date: 2016年04月11日(月)</li>
-                <li>metadata: {'reader': 'markdown', 'category': <Category 'misc'>, 'date': SafeDatetime(2016, 4, 11, 11, 42, 33), 'title': 'Welcome My Page'}</li>
+                <li>locale_date: 2016年04月03日(日)</li>
+                <li>metadata: {'reader': 'markdown', 'title': 'Welcome My Page', 'category': <Category 'misc'>, 'date': SafeDatetime(2016, 4, 3, 10, 20), 'modified': SafeDatetime(2016, 4, 5, 19, 30)}</li>
                 <li>save_as: index.html</li>
                 <li>slug: index</li>
                 <li>source_path: /Users/earth/Dropbox/MyProjects/Python/my_tests/pelican_test/pages_test/content/index.md</li>
                 <li>status: published</li>
-                <li>summary: <p><strong>Hello Pages</strong></p>
-<p><a href="https://muranamihdk.github.io/pages_test/index.html">a link relative to the current file</a><br />
-<a href="https://muranamihdk.github.io/pages_test/index.html">a link relative to the content root</a></p>
-<p><a href="https://muranamihdk.github.io/pages_test/page_attr.html">a link relative to the current file</a><br />
-<a href="https://muranamihdk.github.io/pages_test/page_attr.html">a link relative to the content root</a></p>
-<p><a href="{filename}dir1/index.md">a link relative to the current file</a><br />
-<a href="{filename}/dir1/index.md">a link relative to the content root</a></p>
-<p><a href="{filename}dir2/index.md">a link relative to the current ...</a></p></li>
+                <li>summary: <div class="page-header">
+<h1>でんでんエディター</h1>
+</div>
+<p>でんでんマークダウンをリアルタイムでプレビューできるよっ！</p>
+<h2>段落</h2>
+<p>これは段落です。</p>
+<p>これは別の段落です。</p>
+<h3>段落内の改行</h3>
+<p>これは段落です。<br />
+これは段落の続きです。</p>
+<hr />
+<h2>見出し</h2>
+<h1>見出しレベル１</h1>
+<h2>見出しレベル２</h2>
+<h3>見出しレベル３</h3>
+<h4>見出しレベル４</h4>
+<h5>見出しレベル５</h5>
+<h6>見出しレベル６</h6>
+<hr />
+<h2>引用</h2>
+<blockquote>
+<p>これは引用された段落です。</p>
+<p>これも引用された段落です。</p>
+</blockquote>
+<hr />
+<h2>リスト</h2>
+<ul>
+<li>りんご</li>
+<li>もも</li>
+<li>みかん</li>
+</ul>
+<ol>
+<li>りんご</li>
+<li>もも</li>
+<li>みかん</li>
+</ol>
+<hr />
+<h2>コードブロック</h2>
+<div class="highlight"><pre><span></span><span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Hello world.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+</pre></div>
+
+
+<hr />
+<h2>ハイパーリンク</h2>
+<p>詳しくは<a href="http://example.com/">こちら</a>をごらんください。</p>
+<hr />
+<h2>強調</h2>
+<p>これは<em>強調されたテキスト</em>です。</p>
+<p>これは<strong>重要なテキスト</strong>です。</p>
+<hr />
+<h2>ルビ</h2>
+<p><ruby>電子出版<rt>でんししゅっぱん</rt></ruby>を手軽に</p>
+<hr />
+<h2>縦中横</h2>
+<p>昭和<span class="tcy">53 ...</span></p></li>
                 <li>tags: </li>
                 <li>template: page</li>
                 <li>title: Welcome My Page</li>
@@ -79,6 +276,9 @@
                 <li>url: index.html</li>
             </ul>
 
+		<p>
+		Last updated: 2016年04月05日(火)
+		</p>
         <footer id="contentinfo" class="body">
                 <address id="about" class="vcard body">
                 Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
